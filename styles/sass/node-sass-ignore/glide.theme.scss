@@ -1,0 +1,78 @@
+.glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  opacity: 0.5;
+  &.background--dark {
+    filter: invert(1);
+  }
+  &.background--light {
+    filter: none;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    @media (max-width: 300px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &:hover {
+    opacity: .8;
+  }
+  &--left {
+    left: 1em;
+    img {
+      transform: rotate(90deg);
+    }
+  }
+
+  &--right {
+    right: 1em;
+    img {
+      transform: rotate(270deg);
+    }
+  }
+}
+//glide
+.glide__bullets {
+  position: absolute;
+  z-index: 2;
+  bottom: 2em;
+  left: 50%;
+  display: inline-flex;
+  list-style: none;
+  transform: translateX(-50%);
+}
+.glide__bullet {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0.25em;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &--active {
+    background: white;
+  }
+}
