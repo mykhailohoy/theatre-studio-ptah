@@ -18,6 +18,27 @@ BackgroundCheck.init({
 });
 BackgroundCheck.refresh();
 
+// styles
+
+let width = window.innerWidth;
+let projectorImage = document.querySelector(".s-section--purpose__img");
+let innerDiv = document.querySelector(".s-section--purpose__inner");
+let sectionHeading = document.querySelector(".s-section--purpose__heading");
+let sectionDesc = document.querySelector(".s-section--purpose__list");
+if (width < 900) {
+  // innerDiv.style.top = "-5vw";
+  // innerDiv.style.transform = "translate(-10%)"
+  projectorImage.setAttribute("src", "img/projector-tablet.svg");
+}
+if (width < 700) {
+  // sectionHeading.style.fontSize = "25px";
+  // sectionDesc.style.fontSize = "14px";
+  // innerDiv.style.top = "-3vw";
+}
+// < 500px dn
+
+
+// handling form
 
 let sendBtn = document.querySelector(".contact-box__btn");
 sendBtn.addEventListener("click", function() {
