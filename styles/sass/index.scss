@@ -251,7 +251,7 @@ $colour2: #aaa;
     cursor: default;
   }
 }
-.contact-box__svg {
+svg {
   height: $size;
   width: $size;
 }
@@ -458,7 +458,6 @@ $colour2: #aaa;
   @extend .s-section__desc;
   color: #ddd;
   align-self: start;
-  width: 100%;
 }
 
 .s-cards {
@@ -603,9 +602,8 @@ hr {
 }
 
 .s-section__media {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .s-section--footer__heading {
@@ -613,8 +611,6 @@ hr {
 }
 
 .medium img {
-  width: 40px;
-  max-width: 20vw;
   height: 40px;
   max-height: 20vw;
   margin: 10px;

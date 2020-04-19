@@ -9,34 +9,21 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        },
-      },
+      // {
+      //   test: /\.js$/,
+      //   use: {
+      //     loader: "babel-loader",
+      //     options: { presets: ["es2015"] }
+      //   }
+      // },
       {
         test: /\.scss$/,
-        exclude: /node_modules/,
         use: [
           {
-            loader: "style-loader"
+            loader: "style-loader" // creates style nodes from JS strings
           },
           {
-            loader: "css-loader"
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              config: {
-                path: 'postcss.config.js'
-              }
-            }
+            loader: "css-loader" // translates CSS into CommonJS
           },
           {
             loader: "sass-loader" // compiles Sass to CSS
