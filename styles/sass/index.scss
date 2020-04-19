@@ -192,6 +192,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
 }
 .contact-box__input {
   max-width: 80%;
