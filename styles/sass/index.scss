@@ -251,7 +251,7 @@ $colour2: #aaa;
     cursor: default;
   }
 }
-svg {
+.contact-box__svg {
   height: $size;
   width: $size;
 }
@@ -458,6 +458,7 @@ svg {
   @extend .s-section__desc;
   color: #ddd;
   align-self: start;
+  width: 100%;
 }
 
 .s-cards {
@@ -602,8 +603,9 @@ hr {
 }
 
 .s-section__media {
-  width: fit-content;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .s-section--footer__heading {
@@ -611,6 +613,8 @@ hr {
 }
 
 .medium img {
+  width: 40px;
+  max-width: 20vw;
   height: 40px;
   max-height: 20vw;
   margin: 10px;
