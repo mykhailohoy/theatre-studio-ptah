@@ -9,6 +9,10 @@
 //colours
 $darkgrey: #222;
 
+#content {
+  display: block;
+}
+
 ::selection {
   background: rgba(#666, $alpha: 0.3);
 }
@@ -190,10 +194,12 @@ body {
 
 .contact-box__form {
   display: flex;
+  height: 2rem;
   align-items: center;
   justify-content: center;
   -webkit-box-orient: horizontal;
 }
+
 .contact-box__input {
   max-width: 80%;
   font-family: inherit;
