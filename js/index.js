@@ -105,6 +105,7 @@ function revert() {
   if (supportsCSSTransformsOnSVG) {
     arrow.classList.remove("animate-arrow-accept");
     tick.classList.remove("animate-tick");
+    arrow.style.transform = "translate(0, 0)";
   } else {
     buttonImage.setAttribute("src", "img/send-arrow.svg");
     buttonImage.setAttribute("alt", "надіслати");
