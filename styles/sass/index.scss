@@ -197,7 +197,8 @@ body {
   height: 2rem;
   align-items: center;
   justify-content: center;
-  -webkit-box-orient: horizontal;
+  overflow: hidden;
+  // -webkit-box-orient: horizontal;
 }
 
 .contact-box__input {
@@ -209,6 +210,10 @@ body {
   height: 2rem;
   // line-height: 1.5;
   margin-right: -0.3rem;
+  background: #eee;
+  &[disabled] {
+    background: #ddd;
+  }
 }
 
 $size: 2rem;
