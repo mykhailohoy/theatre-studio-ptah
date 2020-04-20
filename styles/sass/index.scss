@@ -195,7 +195,7 @@ body {
 .contact-box__form {
   display: flex;
   height: 2rem;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
   // overflow: hidden;
   // -webkit-box-orient: horizontal;
@@ -209,7 +209,7 @@ body {
   padding: 2px;
   height: 2rem;
   // line-height: 1.5;
-  margin-right: -0.3rem;
+  // margin-right: -0.3rem;
   background: #eee;
   &[disabled] {
     background: #ddd;
