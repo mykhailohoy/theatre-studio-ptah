@@ -58,8 +58,9 @@ table {
     border-spacing: 0;
 }
 
-input {
+input[text] {
     outline: none !important;
+    opacity: 1 !important;
 }
 
 input::-ms-clear {

@@ -280,8 +280,8 @@ $colour2: #aaa;
 .arrow-layer {
   transform-box: fill-box;
   transform-origin: center;
-  stroke-dasharray: 36;
-  stroke-dashoffset: 0;
+  // stroke-dasharray: 36;
+  // stroke-dashoffset: 0;
 }
 .animate-arrow-accept {
   animation: arrow-accept 0.5s ease-in forwards;
