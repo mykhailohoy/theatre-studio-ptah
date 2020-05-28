@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="styles/css/reset.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.11/"> -->
 
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
     <style>
         noscript {
             font-size: 2rem;
@@ -34,43 +38,49 @@
                 "Птах"
             </div>
         </header>
-        <div class="cover">
-            <div class="cover__background">
-                <div class="cover__text">
-                    <h1 class="cover__heading">Стань<br>справжнім<br>театралом</h1>
-                    <h3 class="cover__desc">Then a mist closed over the black water and the robot gardener. They floated
+        <!-- <h3 class="cover__desc">Then a mist closed over the black water and the robot gardener. They floated
                         in
                         the human system.
-                    </h3>
+                    </h3> -->
+        <div class="cover">
+            <!-- <div class="cover__background"> -->
+                <div class="cover__text">
+                    <h1 class="cover__heading" aria-label="Відкрий театр в собі" data-splitting>
+                        Відкрий<br>театр<br>в собі</h1>
                 </div>
-            </div>
+            <!-- </div> -->
             <img class="cover__img cover__img--desktop" src="img/2-people-in-theatre-full.png" aria-hidden="true"
                 alt=""><img class="cover__img cover__img--mobile" src="img/2-people-in-theatre.png" aria-hidden="true"
                 alt="">
         </div>
 
+
+        <!-- <div class="cover">
+            <div class="cover__text">
+                <h1 class="cover__heading">Hello world</h1>
+            </div>
+            <img src="img/2-people-in-theatre.png" alt="" class="cover__img">
+        </div> -->
         <div class="s-section s-section--purpose" id="s-section--purpose">
             <img class="s-section--purpose__img" src="img/projector.svg" aria-hidden="true" alt="">
             <div class="s-section__inner s-section--purpose__inner">
                 <div class="s-section__text s-section--purpose__text">
-                    <h2 class="s-section__heading s-section--purpose__heading">Чого ми вчимо?</h2>
+                    <!-- <h2 class="s-section__heading s-section--purpose__heading">Чого ми вчимо?</h2>
                     <ul class="s-section__list s-section--purpose__list">
                         <li class="s-section__list-item">Володіння голосом</li>
                         <li class="s-section__list-item">Імпровізації</li>
                         <li class="s-section__list-item">Креативного мислення</li>
                         <li class="s-section__list-item">Фізичної витривалості</li>
-                    </ul>
+                    </ul> -->
+                    <div class="s-section__desc s-section--purpose__desc">
+                        Театральна студія - це відкрий простір для усіх, хто хоче вдосконалюватись і розвиватись.
+Кожне заняття побудоване на основі гри і імпровізації, завжди нове і ніколи не повторюється!
+                    </div>
                 </div>
             </div>
             <div class="s-section__slider s-section--purpose__slider">
                 <div class="slider__inner">
-                    <div class="slider__desc">Light from a service hatch at the rear of the blowers and the amplified
-                        breathing
-                        of
-                        the fighters. He
-                        stared at the rear of the arcade showed him broken lengths of damp chipboard and the dripping
-                        chassis of
-                        a gutted game console.
+                    <div class="slider__desc">Якщо ти прагнеш вільно дивитись людям в очі, легко спілкуватись, швидко комунікувати, креативно мислити, активно знаходити рішення, впевненно діяти і нічого не боятись, а головне - позбавлятись фізичних і психологічних блоків, і в результаті відчувати себе в рази вільнішою і щасливішою людиною, то тобі до нас!
                     </div>
                     <div class="glide">
                         <div class="glide__track" data-glide-el="track">
@@ -87,22 +97,19 @@
                                     <img src="img/carousel/students.jpg" alt="фотографії з занять в тетральній студії">
                                 </li>
                                 <li class="glide__slide">
-                                    <img src="img/carousel/performance.jpg"
+                                    <img src="img/carousel/carousel5.jpg"
                                         alt="фотографії з занять в тетральній студії">
                                 </li>
                                 <li class="glide__slide">
-                                    <img src="img/carousel/hands.jpg" alt="фотографії з занять в тетральній студії">
+                                    <img src="img/carousel/carousel4.jpg" alt="фотографії з занять в тетральній студії">
                                 </li>
                                 <li class="glide__slide">
                                     <img src="img/carousel/games4.jpg" alt="фотографії з занять в тетральній студії">
                                 </li>
                                 <li class="glide__slide">
-                                    <img src="img/carousel/games5.jpg" style="object-position: 0 30%;"
+                                    <img src="img/carousel/carousel3.jpg" style="object-position: 0 30%;"
                                         alt="фотографії з занять в тетральній студії">
                                 </li>
-                                <!-- <li class="glide__slide">
-                                    <img src="img/carousel/games6.jpg" alt="">
-                                </li> -->
                                 <li class="glide__slide">
                                     <img src="img/carousel/games7.jpg" style="object-position: 0 10%;"
                                         alt="фотографії з занять в тетральній студії">
@@ -115,13 +122,16 @@
                                         alt="фотографії з занять в тетральній студії">
                                 </li>
                                 <li class="glide__slide">
-                                    <img src="img/carousel/games.jpg" alt="фотографії з занять в тетральній студії">
+                                    <img src="img/carousel/carousel2.jpg" alt="фотографії з занять в тетральній студії">
                                 </li>
                                 <li class="glide__slide">
                                     <img src="img/carousel/games3.jpg" alt="фотографії з занять в тетральній студії">
                                 </li>
                                 <li class="glide__slide">
                                     <img src="img/carousel/hands1.jpg" alt="фотографії з занять в тетральній студії">
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="img/carousel/carousel1.jpg" alt="фотографії з занять в тетральній студії">
                                 </li>
                             </ul>
                         </div>
@@ -145,6 +155,7 @@
                             <button class="glide__bullet" data-glide-dir="=10"></button>
                             <button class="glide__bullet" data-glide-dir="=11"></button>
                             <button class="glide__bullet" data-glide-dir="=12"></button>
+                            <button class="glide__bullet" data-glide-dir="=13"></button>
                         </div>
                     </div>
                 </div>
@@ -156,18 +167,31 @@
             <div class="s-section__inner s-section--teaching__inner">
                 <div class="s-section__text">
                     <h2 class="s-section__heading s-heading">Як проходять заняття?</h2>
-                    <p class="s-section__desc s-desc">A narrow wedge of light from a half-open service hatch at the
-                        clinic,
-                        Molly took him to the simple Chinese hollow points Shin had sold him. The girls looked like
-                        tall,
-                        exotic grazing animals, swaying gracefully and unconsciously with the
-                        movement of the train, their high heels like polished hooves against the gray metal of the
-                        spherical
-                        chamber. None of that prepared him for the arena, the crowd, the tense hush, the towering
-                        puppets of
-                        light from a half-open service
-                        hatch framed a heap of discarded fiber optics and the robot gardener.
+                    <p class="s-section__desc s-desc">Ми навчаємо на основі професійних акторських тренажів. 
+                        Заняття - це дві години безперервної зміни ігор та вправ, які зявляються в імпровізації.
+                        Ти приходиш, переодягаєшся в зручний одяг і одразу працюєш з усіма!
+                        Не бійся) Спершу всім страшно, але через 5хв ти відчуєш, що вже «свій»!
+                        У нас немає поняття «новенький», у нас є поняття - «всі разом».
                     </p>
+                    <h3 class="s-section__heading--2 s-heading--2">Чого ми вчимо?</h3>
+                    <ul class="s-section__list s-section__list">
+                        <li class="s-section__list-item">
+                            <h4 class="list-item__heading">Фізичноі свободи</h4>
+                                <p class="list-item__desc">пластика тіла, витривалість, виразність жестів, міміки, ходи, позбавлення фізичних блоків</p>
+                        </li>
+                        <li class="s-section__list-item">
+                            <h4 class="list-item__heading">Володіння голосом</h4>
+                            <p class="list-item__desc">правильне дихання, виразне мовлення, дикція, музичність, відчуття ритму та темпу, гра на інструментах, спів</p>
+                        </li>
+                        <li class="s-section__list-item">
+                            <h4 class="list-item__heading">Креативного мислення</h4>
+                                <p class="list-item__desc">образне мислення, вміння креативити, знаходити нестандартні виходи з ситуації, акторські етюди</p>
+                        </li>
+                        <li class="s-section__list-item">
+                            <h4 class="list-item__heading">Імпровізації</h4>
+                                <p class="list-item__desc">фокусування уваги, розвиток памяті, позбавлення страхів, комплексів, відчуття атмосфери, довіра до партнера, формування здатності виражати свої почуття, налагодження живого спілкування з публікою, навики імпровізації</p>
+                        </li>
+                    </ul>
                     <img src="img/two-layers-of-actors.png" alt="сцена знімання фільму"
                         class="s-section--teaching__img">
                 </div>
@@ -178,36 +202,36 @@
         <div class="s-cards">
             <div class="s-cards__inner">
                 <h2 class="s-cards__heading s-cards--abo__heading">Абонемент</h2>
-                <p class="s-cards__desc s-cards--abo__desc">Case had never seen him wear the same suit twice, although
-                    his
-                    wardrobe seemed to consist entirely of meticulous reconstruction’s of garments of the bright void
-                    beyond
-                    the chain link. The girls looked like tall, exotic grazing animals, swaying gracefully and
-                    unconsciously
-                    with the movement of the train, their high heels like polished hooves against.
+                <p class="s-cards__desc s-cards--abo__desc">Абонемент дійсний 1місяць з дня активації.
+                    Активація і оплата абонемента відбувається на Вашому першому занятті.
+                    Ви можете обрати з трьох варіантів абонементів (див.нижче).
+                    Скільки ж місяців ходити і навчатись - кожен вирішує сам! 
+                </p>
+                <p class="s-cards__desc--2 s-cards--abo__desc--2">
+                    *в які дні відходжувати своі заняття (пн/чт/сб) - без різниці, дні не фіксовані за людиною, головне відходити їх за місяць часу. Попередня реєстрація обовязкова!
                 </p>
                 <div class="s-cards__schedule">
                     <h2 class="schedule__heading">Коли?</h2>
                     <hr>
                     <div class="schedule__flexbox">
-                        <div class="schedule__chip">Пн. 19:00 - 20:30</div>
-                        <div class="schedule__chip">Чт. 19:00 - 20:30</div>
-                        <div class="schedule__chip">Сб. 14:00 - 15:30</div>
+                        <div class="schedule__chip">Пн. 18:30 - 20:30</div>
+                        <div class="schedule__chip">Чт. 18:30 - 20:30</div>
+                        <div class="schedule__chip">Сб. 14:00 - 16:00</div>
                     </div>
                 </div>
 
                 <div class="cards">
                     <div class="card card--abo">
-                        <h3 class="card__heading card--abo__heading"><span>1 раз</span><br> на тиждень</h3>
-                        <p class="card__desc card--abo__desc">Всього чотири заняття на місяць. Ціна: 400 грн.</p>
+                        <h3 class="card__heading card--abo__heading"><span>4 рази</span><br> на місяць</h3>
+                        <p class="card__desc card--abo__desc">Всього чотири заняття на місяць. Ціна: 650 грн.</p>
                     </div>
                     <div class="card card--abo">
-                        <h3 class="card__heading card--abo__heading"><span>2 рази</span><br>на тиждень</h3>
-                        <p class="card__desc card--abo__desc">Всього 8 занять на місяць. Ціна: 600 грн.</p>
+                        <h3 class="card__heading card--abo__heading"><span>8 разів</span><br>на місяць</h3>
+                        <p class="card__desc card--abo__desc">Всього 8 занять на місяць. Ціна: 850 грн.</p>
                     </div>
                     <div class="card card--abo">
                         <h3 class="card__heading card--abo__heading"><span>Безліміт</span></h3>
-                        <p class="card__desc card--abo__desc">Відвідування усіх занять -- близько 12 в місяць. Ціна: 800
+                        <p class="card__desc card--abo__desc">Відвідування усіх занять — всього 13-14 в місяць. Ціна: 1200
                             грн.</p>
                     </div>
                 </div>
@@ -263,9 +287,8 @@
                             class="medium viber"><img src="img/viber.svg" alt="іконка Viber"></a>
                     </div>
                     <div class="credit">
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxTnrBMwGJbjblRnDCWzCFVJJNgLdkbQTfXgSVKTwFhcMDjQSBVTwHPwCdltkWThNcbTTq"
-                            target="_blank">Розробка:
-                            mykhailo.hoy@gmail.com</a>
+                        <a href="https://mykhailohoy.github.io/uk" target="_blank">Розробка:
+                            Mykhailo Hoy</a>
                     </div>
                 </div>
             </div>
