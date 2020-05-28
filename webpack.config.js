@@ -42,6 +42,11 @@ module.exports = {
             loader: "sass-loader" // compiles Sass to CSS
           }
         ]
+      },
+      {
+        test: /\.jpg$/,
+        exclude: /node_modules/,
+        use: [{loader: "file-loader"}]
       }
     ]
   }
