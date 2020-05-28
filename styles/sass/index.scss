@@ -44,7 +44,7 @@ body {
   font-family: "Open Sans", serif;
   background: #ccc;
   @media (max-width: 500px) {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -751,9 +751,9 @@ hr {
   .s-cards__heading {
     margin-bottom: 2rem;
   }
-  .s-cards__inner {
-    width: 60%;
-  }
+  // .s-cards__inner {
+  //   width: 60%;
+  // }
   .cards {
     flex-direction: column;
     align-items: flex-start;
