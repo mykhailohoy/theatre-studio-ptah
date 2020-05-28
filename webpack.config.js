@@ -46,14 +46,7 @@ module.exports = {
       {
         test: /\.jpg$/,
         exclude: /node_modules/,
-        loader: "file-loader",
-        options: {
-          name: '[path][name].[ext]',
-          // context: path.resolve(__dirname, "../"),
-          // outputPath: 'dist/',
-          publicPath: '/',
-          useRelativePaths: true
-        }
+        loader: "file-loader"
       }
     ]
   }
