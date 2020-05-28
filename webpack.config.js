@@ -49,9 +49,9 @@ module.exports = {
         loader: "file-loader",
         options: {
           name: '[path][name].[ext]',
-          context: path.resolve(__dirname),
-          outputPath: 'dist/',
-          publicPath: '../',
+          // context: path.resolve(__dirname, "../"),
+          // outputPath: 'dist/',
+          publicPath: '/',
           useRelativePaths: true
         }
       }
