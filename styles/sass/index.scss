@@ -13,6 +13,10 @@ $darkgrey: #222;
   display: block;
 }
 
+img {
+  user-select: none;
+}
+
 ::selection {
   background: rgba(#666, $alpha: 0.3);
 }
@@ -157,7 +161,6 @@ body {
   }
 }
 .cover__img {
-  user-select: none;
   // margin-top: 0;
   width: 100%;
   position: absolute;
@@ -298,7 +301,6 @@ body {
 }
 
 .s-section--teaching__img {
-  user-select: none;
   display: block;
   margin: 4rem auto 0;
   width: 100%;
