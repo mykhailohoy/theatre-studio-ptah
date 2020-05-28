@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/"
+    publicPath: "/dist"
   },
   module: {
     rules: [
@@ -46,7 +46,7 @@ module.exports = {
       {
         test: /\.jpg$/,
         exclude: /node_modules/,
-        use: [{loader: "file-loader"}]
+        loader: "file-loader"
       }
     ]
   }
