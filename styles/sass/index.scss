@@ -18,7 +18,8 @@ img {
 }
 
 ::selection {
-  background: rgba(#666, $alpha: 0.3);
+  background: rgba(180, 180, 180, .99);
+  color: #111;
 }
 
 @function shadow3d($precision, $size, $color) {
@@ -567,7 +568,7 @@ $colour2: #aaa;
 }
 @media (max-width: 500px) {
   .cover {
-    height: 300px;
+    height: 350px;
   }
   .cover__text {
     box-shadow: none;
