@@ -509,6 +509,10 @@ $colour2: #aaa;
   .glide__slide {
     width: 90vw;
     height: 60vw;
+    img {
+      width: 90vw;
+      height: 60vw;
+    }
   }
   .glide__bullets {
     display: none;
@@ -516,7 +520,9 @@ $colour2: #aaa;
 }
 
 .glide__slide img {
-  @extend .glide__slide;
+  height: 31vw;
+  width: 100%;
+  // @extend .glide__slide;
   object-fit: cover;
   display: block;
 }
