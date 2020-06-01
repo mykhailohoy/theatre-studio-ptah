@@ -502,6 +502,15 @@ $colour2: #aaa;
   height: 31vw;
   width: 100%;
 }
+
+.glide__slide img {
+  height: 31vw;
+  width: 100%;
+  // @extend .glide__slide;
+  object-fit: cover;
+  display: block;
+}
+
 @media (max-width: 700px) {
   .glide {
     width: 90%;
@@ -517,14 +526,6 @@ $colour2: #aaa;
   .glide__bullets {
     display: none;
   }
-}
-
-.glide__slide img {
-  height: 31vw;
-  width: 100%;
-  // @extend .glide__slide;
-  object-fit: cover;
-  display: block;
 }
 
 // .s-section__list-item {
