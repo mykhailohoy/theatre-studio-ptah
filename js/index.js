@@ -3,6 +3,9 @@ import "regenerator-runtime/runtime";
 
 import '../styles/sass/index.scss';
 
+import Glide from './glide.min.js';
+import BackgroundCheck from './backgroundCheck.js';
+
 let glide = new Glide(".glide", {
   type: "carousel",
   autoplay: 6000,
@@ -110,13 +113,3 @@ function revert() {
     buttonImage.setAttribute("alt", "надіслати");
   }
 }
-
-Splitting().forEach(s => {
-	/* Loop through words */
-	s.words.forEach(word => {
-		/* If the parent element includes `aria-label`, set `aria-hidden="true"` */
-		if (word.parentElement.getAttribute('aria-label')) {
-			word.setAttribute('aria-hidden', true)
-		}
-	})
-});

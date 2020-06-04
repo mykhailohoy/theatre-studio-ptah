@@ -1,5 +1,5 @@
 // Open Sans
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:200,300,400&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:wght@200;300;400;600;700;800&display=swap&subset=cyrillic-ext");
 // glideJS
 // core
 @import "./glide.core.scss";
@@ -118,48 +118,10 @@ body {
   font-family: arial;
   line-height: 70px;
   text-align: center;
-  // font-weight: 800;
   // transform: perspective(600px) rotateY(-10deg);
-  .char {
-    font-weight: 800;
-    text-shadow: shadow3d(0.25, 5, #111),
+  font-weight: 800;
+  text-shadow: shadow3d(0.25, 5, #111),
                   10px 10px 10px #333;
-    /* &:nth-child(2n) {
-      transform: rotate(3deg);
-    }
-    &:nth-child(3n) {
-      transform: rotate(-3deg);
-    }
-    &:nth-child(5n) {
-      transform: rotate(4deg);
-    }
-    &:nth-child(7n) {
-      transform: rotate(-4deg);
-    } */
-  }
-  .word {
-      //   .char {
-      //     text-shadow: shadow3d(0.25, 3, black);
-      //   }
-      //   .char:nth-child(2) {
-      //     text-shadow: shadow3d(0.25, 3.5, black);
-      //   }
-      //   .char:nth-child(3) {
-      //     text-shadow: shadow3d(0.25, 4, black);
-      //   }
-      //   .char:nth-child(4) {
-      //     text-shadow: shadow3d(0.25, 4.5, black);
-      //   }
-      //   .char:nth-child(5) {
-      //     text-shadow: shadow3d(0.25, 5, black);
-      //   }
-      //   .char:nth-child(6) {
-      //     text-shadow: shadow3d(0.25, 5.5, black);
-      //   }
-      //   .char:nth-child(7) {
-      //     text-shadow: shadow3d(0.25, 6, black);
-      //   };
-  }
 }
 .cover__img {
   // margin-top: 0;
